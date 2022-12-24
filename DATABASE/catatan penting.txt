@@ -1,0 +1,7 @@
+1. Atur BASE URL agar program tampil responsive
+-Buka index.php
+-Cari: <base href="http://localhost/sc/sistempakar/CF2/">
+-Ubah: http://localhost/sc/sistempakar/CF2/ dengan url folder aplikasi di htdocs
+Contoh : http://localhost/CF2/, http://localhost/sistempakar/, dll
+
+2. Jika error php 7 ke atas, silahkan fix bug nya dengan mengikuti panduan yg kami bagikan.
