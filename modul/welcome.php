@@ -127,29 +127,11 @@ $dtgejala=mysql_fetch_assoc($htgejala); ?>
 <br>
 <div class="row">
   <div class="col-sm-4 text-center padding wow fadeIn animated" data-wow-duration="1000ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 300ms; animation-name: fadeIn;">
-    <div class="single-service">
 
-      <img src="aset/banner/icon3.png" alt="">
-
-      <h2>Aplikasi Responsif</h2>
-      <p>Aplikasi sistem pakar ini dapat menyesuaikan ukuran perangkat anda, jadi walupun di akses melalui perangkat mobile tetap nyaman juga.</p>
-    </div>
   </div>
   <div class="col-sm-4 text-center padding wow fadeIn animated" data-wow-duration="1000ms" data-wow-delay="600ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 600ms; animation-name: fadeIn;">
-    <div class="single-service">
 
-      <img src="aset/banner/icon2.png" alt="">
+  </div>
 
-      <h2>Sahabat Peternak</h2>
-      <p>Sistem Pakar ini terus di sesuaikan perhitungan diagnosanya, supaya akurasi terhadap penyakit yang diderita lebih sesuai dan  menjadi acuan peternak.</p>
-    </div>
-  </div>
-  <div class="col-sm-4 text-center padding wow fadeIn animated" data-wow-duration="1000ms" data-wow-delay="900ms" style="visibility: visible; animation-duration: 1000ms; animation-delay: 900ms; animation-name: fadeIn;">
-    <div class="single-service">
-      <img src="aset/banner/icon1.png" alt="">
-      <h2>Admin Pakar</h2>
-      <p>Terdapat fitur admin pakar, untuk mengatur pengetahuan dan CF pakar, telah di sesuaikan tampilannya sehingga pakar bisa lebih mengeksplore aplikasi.</p>
-    </div>
-  </div>
 </div>
 <div></div>

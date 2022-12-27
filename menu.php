@@ -30,6 +30,24 @@ $module = $_GET['module'];
                 <i class="fa fa-flask"></i> 
                 <span>Pengetahuan Hama</span>
               </a>
+            </li>
+
+            <li>
+              <a <?php if ($module == "keparahanpenyakit") echo 'class="active"'; ?> href="keparahanpenyakit">
+                <i class="fa fa-flask"></i> 
+                <span>
+                  <i> Disease Severity</i>
+                </span>
+              </a>
+            </li>
+
+            <li>
+              <a <?php if ($module == "tanamanterinpeksi") echo 'class="active"'; ?> href="intensitaskerusakan/tanamanterinpeksi">
+                <i class="fa fa-flask"></i> 
+                <span>
+                  <i> Disease incidence</i>
+                </span>
+              </a>
             </li>   
 
 

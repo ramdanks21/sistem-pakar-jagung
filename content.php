@@ -9,6 +9,12 @@ elseif ($module == "bantuan"){
 }
 elseif ($module == "intensitaskerusakan"){
 	include "modul/intensitaskerusakan.php";
+
+}elseif ($module == "keparahanpenyakit"){
+	include "modul/keparahanpenyakit/keparahanpenyakit.php";
+
+}elseif ($module == "intensitaskerusakan"){
+	include "modul/keparahanpenyakit.php";
 }
 elseif ($module == "diagnosa"){
 	include "modul/diagnosa/diagnosa.php";
