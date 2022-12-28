@@ -31,7 +31,7 @@ switch ($_GET['act']) {
     $argpkt[$rpkt['kode_penyakit']] = $rpkt['gambar'];
   }
 
-      //print_r($arkondisitext);
+  print_r($arkondisitext);
 // -------- perhitungan certainty factor (CF) ---------
 // --------------------- START ------------------------
   $sqlpenyakit = mysql_query("SELECT * FROM penyakit order by kode_penyakit");

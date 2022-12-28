@@ -15,7 +15,7 @@ if (!(isset($_SESSION['username']) && isset($_SESSION['password']))) {
 
 // Hapus pengetahuan
 	if ($module=='keparahanpenyakit' AND $act=='hapus'){
-		mysql_query("DELETE FROM keparahan_penyakit WHERE kode_pengetahuan='$_GET[id]'");
+		mysql_query("DELETE FROM keparahan_penyakit WHERE id_keparahan='$_GET[id_keparahan]'");
 		header('location:../../index.php?module='.$module);
 	}
 
@@ -24,27 +24,23 @@ if (!(isset($_SESSION['username']) && isset($_SESSION['password']))) {
 		$jml_sample=$_POST[jml_sample];
 		$nilai_skor=$_POST[nilai_skor];
 		$total_sample=$_POST[total_sample];
-		$mb=$_POST[mb];
-		$md=$_POST[md];
 		mysql_query("INSERT INTO keparahan_penyakit(
-			kode_penyakit,kode_gejala,mb,md) 
+			jml_sample,nilai_skore,total_sample) 
 		VALUES(
-			'$kode_penyakit','$kode_gejala','$mb','$md')");
+			'$jml_sample','$nilai_skor','$total_sample')");
 		header('location:../../index.php?module='.$module);
 	}
 
 // Update pengetahuan
 	elseif ($module=='keparahanpenyakit' AND $act=='update'){
-		$kode_penyakit=$_POST[kode_penyakit];
-		$kode_gejala=$_POST[kode_gejala];
-		$mb=$_POST[mb];
-		$md=$_POST[md];
+		$jml_sample=$_POST[jml_sample];
+		$nilai_skor=$_POST[nilai_skor];
+		$total_sample=$_POST[total_sample];
 		mysql_query("UPDATE basis_pengetahuan SET
-			kode_penyakit   = '$kode_penyakit',
-			kode_gejala   = '$kode_gejala',
-			mb   = '$mb',
-			md   = '$md'
-			WHERE kode_pengetahuan       = '$_POST[id]'");
+			jml_sample   = '$jml_sample',
+			nilai_skor   = '$nilai_skor',
+
+			WHERE id_keparahan       = '$_POST[id_keparahan]'");
 		header('location:../../index.php?module='.$module);
 	}
 	
