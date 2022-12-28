@@ -15,7 +15,9 @@ select option {
   color: #000;
   border: 1px solid #ddd;
 }
-
+#table-keparahan{
+    color: white;
+}
 
 
 select option[data-id="0"]{ /* data-id not val */
@@ -146,7 +148,7 @@ div.paging {
 }
 
 img.post{
-    
+
 }
 
 .well {

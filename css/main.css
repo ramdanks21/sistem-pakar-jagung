@@ -1,55 +1,55 @@
 .ayaem {
-  margin: auto;
-  width: 211px;
-  height: 100px;
-  background-image: url("../aset/login/ayaem-login.png");
-  position: relative;
+	margin: auto;
+	width: 211px;
+	height: 100px;
+	background-image: url("../aset/login/ayaem-login.png");
+	position: relative;
 }
 .ayaem .hand {
-  width: 34px;
-  height: 34px;
-  border-radius: 40px;
-  background-color: #403f61;
-  transform: scaleY(0.6);
-  position: absolute;
-  left: 14px;
-  bottom: -18px;
-  transition: 0.3s ease-out;
+	width: 34px;
+	height: 34px;
+	border-radius: 40px;
+	background-color: #403f61;
+	transform: scaleY(0.6);
+	position: absolute;
+	left: 14px;
+	bottom: -18px;
+	transition: 0.3s ease-out;
 }
 .ayaem .hand.password {
-  transform: translateX(42px) translateY(-15px) scale(0.7);
+	transform: translateX(42px) translateY(-15px) scale(0.7);
 }
 .ayaem .hand.hand-r {
-  left: 170px;
+	left: 170px;
 }
 .ayaem .hand.hand-r.password {
-  transform: translateX(-42px) translateY(-15px) scale(0.7);
+	transform: translateX(-42px) translateY(-15px) scale(0.7);
 }
 .ayaem .arms {
-  position: absolute;
-  top: 58px;
-  height: 41px;
-  width: 100%;
-  overflow: hidden;
+	position: absolute;
+	top: 58px;
+	height: 41px;
+	width: 100%;
+	overflow: hidden;
 }
 .ayaem .arms .arm {
-  width: 40px;
-  height: 65px;
-  background-image: url("http://localhost/spkayam/aset/login/login-arm.png");
-  position: absolute;
-  left: 20px;
-  top: 40px;
-  transition: 0.3s ease-out;
+	width: 40px;
+	height: 65px;
+	background-image: url("http://localhost/spkayam/aset/login/login-arm.png");
+	position: absolute;
+	left: 20px;
+	top: 40px;
+	transition: 0.3s ease-out;
 }
 .ayaem .arms .arm.password {
-  transform: translateX(40px) translateY(-40px);
+	transform: translateX(40px) translateY(-40px);
 }
 .ayaem .arms .arm.arm-r {
-  left: 158px;
-  transform: scaleX(-1);
+	left: 158px;
+	transform: scaleX(-1);
 }
 .ayaem .arms .arm.arm-r.password {
-  transform: translateX(-40px) translateY(-40px) scaleX(-1);
+	transform: translateX(-40px) translateY(-40px) scaleX(-1);
 }
 .text-ket {
 	color: #fff;
@@ -61,49 +61,53 @@
 	margin-bottom: 100px;
 }
 .bg-keterangan {
-    background: #34495e;
+	background: #34495e;
 	color: #fff;
 	padding: 9px;
 	font-size: 17px;
 }
+#table-keparahan{
+	color: white;
+}
+
 .kontak {
-    display: inline-block;
-    padding: 3px 12px;
-    margin-bottom: 0;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.42857143;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-image: none;
-    border: 1px solid transparent;
-    border-radius: 4px;
+	display: inline-block;
+	padding: 3px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
 }
 .ke-kanan {
-    float: right !important;
+	float: right !important;
 }
 #tombol {
-background:#4e4b8f;
+	background:#4e4b8f;
 	bottom: -15px;
-    cursor: pointer;
-    right: 45px;
+	cursor: pointer;
+	right: 45px;
 	border-radius:25px;
 	-moz-border-radius:25px;
 	-webkit-border-radius :25px;
 	-ms-border-radius:25px;
 	-o-border-radius: 25px;
 	border:15px solid #ffffff;
-	 padding: 8px 25px;
-    color: #ffffff;
-    text-transform: uppercase;
+	padding: 8px 25px;
+	color: #ffffff;
+	text-transform: uppercase;
 }
 #print{
 	border-bottom: 0;
@@ -164,40 +168,40 @@ background:#4e4b8f;
 	border-radius: 4px;
 }
 #mb{
-    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    border: 1px solid #efefef;
-    font-size: 13px;
-    outline: 0 none;
-    overflow: hidden;
-    padding: 3px 30px;
-    resize: none;
-    border-radius: 10px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    font-family: "open_sansregular",Arial,sans-serif;
+	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+	border: 1px solid #efefef;
+	font-size: 13px;
+	outline: 0 none;
+	overflow: hidden;
+	padding: 3px 30px;
+	resize: none;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	font-family: "open_sansregular",Arial,sans-serif;
 	text-align: center;
-	}
+}
 #md{
-    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
-    border: 1px solid #efefef;
-    font-size: 13px;
-    outline: 0 none;
-    overflow: hidden;
-    padding: 3px 30px;
-    resize: none;
-    border-radius: 10px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    font-family: "open_sansregular",Arial,sans-serif;
+	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+	border: 1px solid #efefef;
+	font-size: 13px;
+	outline: 0 none;
+	overflow: hidden;
+	padding: 3px 30px;
+	resize: none;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	font-family: "open_sansregular",Arial,sans-serif;
 	text-align: center;
-	}
+}
 #kode_penyakit{
 	padding: 2px 9px;
-	}
+}
 #kode_gejala{
 	padding: 2px 9px;
 }
@@ -214,14 +218,14 @@ background:#4e4b8f;
 	border-radius: 10px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
-		-ms-border-radius: 10px;
-		-o-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
 	font-family: "open_sansregular",Arial,sans-serif;
 }
 border-color: #66afe9;
-	outline: 0;
-	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
-	box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+outline: 0;
+-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
 #nama_gejala{
 	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
 	border: 1px solid #efefef;
@@ -234,8 +238,8 @@ border-color: #66afe9;
 	border-radius: 10px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
-		-ms-border-radius: 10px;
-		-o-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
 	font-family: "open_sansregular",Arial,sans-serif;
 }
 #nama_penyakit{
@@ -250,8 +254,8 @@ border-color: #66afe9;
 	border-radius: 10px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
-		-ms-border-radius: 10px;
-		-o-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
 	font-family: "open_sansregular",Arial,sans-serif;
 }
 #det_penyakit{
@@ -265,8 +269,8 @@ border-color: #66afe9;
 	border-radius: 10px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
-		-ms-border-radius: 10px;
-		-o-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
 	font-family: "open_sansregular",Arial,sans-serif;
 }
 #srn_penyakit{
@@ -280,8 +284,8 @@ border-color: #66afe9;
 	border-radius: 10px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
-		-ms-border-radius: 10px;
-		-o-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
 	font-family: "open_sansregular",Arial,sans-serif;
 }
 #nama_lengkap{
@@ -296,12 +300,12 @@ border-color: #66afe9;
 	border-radius: 10px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
-		-ms-border-radius: 10px;
-		-o-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
 	font-family: "open_sansregular",Arial,sans-serif;
 }
 #hapus{
-   color: #c0392b;
+	color: #c0392b;
 	padding: 2px 5px;
 	text-decoration: none;
 	font-family: sans-serif;
@@ -310,16 +314,16 @@ border-color: #66afe9;
 	display: inline-block;
 }
 #ubah{
-    color: #27ae60;
-    padding: 2px 5px;
-    text-decoration: none;
-    font-family: sans-serif;
-    font-size: 11pt;
-    border: 1px solid #27ae60;
+	color: #27ae60;
+	padding: 2px 5px;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-size: 11pt;
+	border: 1px solid #27ae60;
 	display: inline-block;
 }
 #wrap{
-    overflow-x: hidden;
+	overflow-x: hidden;
 }
 .float{
 	background: #336699;
