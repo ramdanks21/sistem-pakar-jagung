@@ -210,43 +210,43 @@ Petunjuk pengisian
 <thead>
 <th>Skor</th>
 <th>Kisaran Intensitas Penyakit %</th>
-<th>Kisaran Intensitas Penyakit %</th>
+<th>Kategori</th>
 </thead>
 <tbody style='color:white'>
 <tr>
 <td>0 (Tidak Terserang)</td>
 <td>Tidak Ada penyakit</td>
-<td>tidak ada penyakit</td>
+<td>Tidak Terserang</td>
 </tr>
 
 <tr>
 <td> 1 (Sangant rendah)</td>
-<td> 0 < x < 12</td>
-<td> < 20 </td>
+<td> < 20</td>
+<td> Intensitas sangat rendah </td>
 </tr>
 
 <tr>
 <td> 2 (Rendah)</td>
-<td> 12 < x < 25</td>
 <td> 20 - 40 </td>
+<td> Intensitas  Rendah</td>
 </tr>
 
 <tr>
 <td> 3 (Sedang)</td>
-<td> 25 < x < 50</td>
 <td> 40 -60 </td>
+<td> Intensitas sedang</td>
 </tr>
 
 <tr>
 <td> 4 (Tinggi)</td>
-<td> 50 < x < 75</td>
 <td> 60 - 80 </td>
+<td> Intensitas Tinggi</td>
 </tr>
 
 <tr>
 <td> 5 (Sangat tinggi)</td>
-<td> 75< x < 100</td>
 <td>  80 - 100 </td>
+<td> Sangat tinggi</td>
 </tr>
 </tbody>
 </table>
