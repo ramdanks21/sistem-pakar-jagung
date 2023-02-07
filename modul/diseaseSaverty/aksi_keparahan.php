@@ -50,7 +50,7 @@ if (!(isset($_SESSION['username']) && isset($_SESSION['password']))) {
 			luas_daun_terserang   = '$luas_daun_terserang',
 			skor   = '$skor',
 			jml_daun_skor_sama   = '$jml_daun_skor_sama',
-			rekomendasi   = '$rekomendasi',
+			rekomendasi   = '$rekomendasi'
 			WHERE id_keparahan= '$_POST[id]'");
 		
 		header('location:../../index.php?module='.$module);

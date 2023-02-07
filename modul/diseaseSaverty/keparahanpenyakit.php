@@ -246,7 +246,7 @@ if (!(isset($_SESSION['username']) && isset($_SESSION['password']))) {
       // }
 
       echo "<form name=text_form method=POST action='$aksi?module=diseaseSaverty&act=update' onsubmit='return Blank_TextField_Validator()' enctype='multipart/form-data'>
-      <input type=hidden name=id_keparahan value='$r[id_keparahan]'>
+      <input type=hidden name=id value='$r[id_keparahan]'>
       <br><br><table class='table table-bordered'>
       <tr><td width=120>Luas Daun Terserang</td><td><input autocomplete='off' type=text class='form-control' name='luas_daun_terserang' size=30 value=\"$r[luas_daun_terserang]\"></td></tr>
       <tr><td width=120>SKor</td><td><textarea rows='4' cols='50' type=text class='form-control' name='skor'>$r[skor]</textarea></td></tr>
@@ -255,7 +255,7 @@ if (!(isset($_SESSION['username']) && isset($_SESSION['password']))) {
 
       <tr><td width=120>Rekomendasi</td><td><textarea rows='4' cols='50' type=text class='form-control' name='rekomendasi'>$r[rekomendasi]</textarea></td></tr>
 
-      <tr><td></td><td><input class='btn btn-success' type=submit name=submit value='Simpasn' >
+      <tr><td></td><td><input class='btn btn-success' type=submit name=submit value='Simpan' >
 
       <input class='btn btn-danger' type=button name=batal value='Batal' onclick=\"window.location.href='?module=diseaseSaverty';\"></td></tr>
       </table></form>";
