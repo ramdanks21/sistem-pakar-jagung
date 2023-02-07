@@ -10,8 +10,11 @@ elseif ($module == "bantuan"){
 elseif ($module == "intensitaskerusakan"){
 	include "modul/intensitaskerusakan.php";
 
-}elseif ($module == "keparahanpenyakit"){
-	include "modul/keparahanpenyakit/keparahanpenyakit.php";
+}elseif ($module == "diseaseSaverty"){
+	include "modul/diseaseSaverty/keparahanpenyakit.php";
+
+}elseif ($module == "diseaseIncidence"){
+	include "modul/diseaseIncidence/presentasetanaman.php";
 
 }elseif ($module == "intensitaskerusakan"){
 	include "modul/keparahanpenyakit.php";

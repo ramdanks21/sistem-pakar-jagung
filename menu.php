@@ -33,106 +33,112 @@ $module = $_GET['module'];
             </li>
 
             <li>
-              <a <?php if ($module == "keparahanpenyakit") echo 'class="active"'; ?> href="keparahanpenyakit">
+              <a <?php if ($module == "diseaseSaverty") echo 'class="active"'; ?> href="diseaseSaverty">
                 <i class="fa fa-flask"></i> 
                 <span>
                   <i> Disease Severity</i>
+
                 </span>
               </a>
             </li>
 
             <li>
-              <a <?php if ($module == "tanamanterinpeksi") echo 'class="active"'; ?> href="intensitaskerusakan/tanamanterinpeksi">
+              <a <?php if ($module == "diseaseIncidence") echo 'class="active"'; ?> href="diseaseIncidence">
                 <i class="fa fa-flask"></i> 
                 <span>
                   <i> Disease incidence</i>
+
                 </span>
               </a>
-            </li>   
+            </li>
+
+
+
+
 
 
             
 
 
             <div class="container"></div>
-            <li>
+            <!-- <li>
               <a <?php if ($module == "post") echo 'class="active"'; ?> href="post">
                 <i class="fa fa-file-text"></i>
                 <span>Post Keterangan</span>
               </a>
-              <li>
+            </li> -->
 
 
-                <div class="container"></div>
+            <div class="container"></div>
+            <li>
+              <a <?php if ($module == "password") echo 'class="active"'; ?> href="password">
+                <i class="fa fa-edit">
+                </i>
+                <span>Ubah Password</span></a>
                 <li>
-                  <a <?php if ($module == "password") echo 'class="active"'; ?> href="password">
-                    <i class="fa fa-edit">
-                    </i>
-                    <span>Ubah Password</span></a>
-                    <li>
-                      <div class="container">
+                  <div class="container">
 
-                      </div>
-                      <?php
+                  </div>
+                  <?php
 
                       // tampilan awal  beranda
 
-                    }else {
+                }else {
+                  ?>
+                  <li>
+
+                    <a <?php if ($module == "diagnosa") echo 'class="active"'; ?> href="diagnosa">
+
+                      <i class="fa fa-search-plus"></i> 
+
+                      <span>Diagnosa</span>
+                    </li>
+                  </a>
+                  <li>
+
+                    <a <?php if ($module == "diagnosahama") echo 'class="active"'; ?> href="diagnosahama">
+
+                      <i class="fa fa-search-plus"></i> 
+
+                      <span>Diagnosa Hama</span>
+                    </li>
+                  </a>
+
+
+                  <div class="container">
+
+                  </div>
+                  <li>
+                    <a <?php if ($module == "riwayat") echo 'class="active"'; ?> href="riwayat">
+
+                      <i class="fa fa-clock-o"></i> <span>Riwayat</span>
+                    </a>
+
+
+                    <li>
+
+                      <div class="container"></div>
+
+                      <a <?php if ($module == "keterangan") echo 'class="active"'; ?> href="keterangan">
+                        <i class="fa fa-commenting-o"></i>
+
+                        <span>Keterangan</span>
+                      </a>
+                    </li>
+
+
+                    <li>
+                      <a <?php if ($module == "intensitas") echo 'class="active"'; ?> href="diagnosahama"><i class="fa fa-bookmark-o"></i> <span>Intensitas Kerusakan</span>
+
+                      </a>
+
+                      <li>
+                        <div class="container"></div>
+
+
+                        <?php
+                      }
+
                       ?>
-                      <li>
-
-                        <a <?php if ($module == "diagnosa") echo 'class="active"'; ?> href="diagnosa">
-
-                          <i class="fa fa-search-plus"></i> 
-
-                          <span>Diagnosa</span>
-                        </li>
-                      </a>
-                      <li>
-
-                        <a <?php if ($module == "diagnosahama") echo 'class="active"'; ?> href="diagnosahama">
-
-                          <i class="fa fa-search-plus"></i> 
-
-                          <span>Diagnosa Hama</span>
-                        </li>
-                      </a>
-
-
-                      <div class="container">
-
-                      </div>
-                      <li>
-                        <a <?php if ($module == "riwayat") echo 'class="active"'; ?> href="riwayat">
-
-                          <i class="fa fa-clock-o"></i> <span>Riwayat</span>
-                        </a>
-
-
-                        <li>
-
-                          <div class="container"></div>
-
-                          <a <?php if ($module == "keterangan") echo 'class="active"'; ?> href="keterangan">
-                            <i class="fa fa-commenting-o"></i>
-
-                            <span>Keterangan</span>
-                          </a>
-                        </li>
-
-
-                        <li>
-                          <a <?php if ($module == "intensitaskerusakan") echo 'class="active"'; ?> href="intensitaskerusakan"><i class="fa fa-bookmark-o"></i> <span>Intensitas Kerusakan</span>
-
-                          </a>
-
-                          <li>
-                            <div class="container"></div>
-
-
-                            <?php
-                          }
-
-                          ?>
-                          <li><a <?php if ($module == "tentang") echo 'class="active"'; ?> href="tentang"><i class="fa fa-info-circle"></i> <span>Tentang</span></a><li>
-                            <div class="container"></div>
+                      <li><a <?php if ($module == "tentang") echo 'class="active"'; ?> href="tentang"><i class="fa fa-info-circle"></i> <span>Tentang</span></a><li>
+                        <div class="container"></div>

@@ -77,7 +77,7 @@ if (!(isset($_SESSION['username']) && isset($_SESSION['password']))) {
 				echo" <table class='table table-bordered' style='overflow-x=auto' cellpadding='0' cellspacing='0'>
 				<thead>
 				<tr>
-				<th>No</th>
+				<th>ao</th>
 				<th>Penyakit</th>
 				<th>Gejala</th>
 				<th>MB</th>

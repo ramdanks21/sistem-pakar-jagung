@@ -61,10 +61,13 @@ if (!(isset($_SESSION['username']) && isset($_SESSION['password']))) {
 			$offset = 0;
 		}
 		$tampil=mysql_query("SELECT * FROM keparahan_penyakit   ");
+		
 		echo "<form method=POST action='?module=pengetahuanHama' name=text_form onsubmit='return Blank_TextField_Validator_Cari()'>
 		<br><br><table class='table table-bordered'>
 		<tr><td><input class='btn bg-olive margin' type=button name=tambah value='Tambah Basis Pengetahuan' onclick=\"window.location.href='keparahanpenyakit/keparahanakibatpenyakit';\"><input type=text name='keyword' style='margin-left: 10px;' placeholder='Ketik dan tekan cari...' class='form-control' value='$_POST[keyword]' /> <input class='btn bg-olive margin' type=submit value='   Cari   ' name=Go></td> </tr>
-		</table></form>";
+
+		</table>
+		</form>";
 		$baris=mysql_num_rows($tampil);
 		if ($_POST[Go]){
 			$numrows = mysql_num_rows(mysql_query("SELECT * FROM keparahan_penyakit"));
@@ -121,10 +124,10 @@ if (!(isset($_SESSION['username']) && isset($_SESSION['password']))) {
 				<thead>
 				<tr>
 				<th>No</th>
-				<th>Jumlah Sample</th>
-				<th>Nilai Skor</th>
-				<th>Jumlah Totoal Sampe Di Amati</th>
-				<th>Nilai Skor Tertinggi</th>
+				<th>Luas Daun Terserang</th>
+				<th>Skor</th>
+				<th>Jumlah Daun Dengan Skor Sama</th>
+				<th>Rekomendasi</th>
 				<th width='21%'>Aksi</th>
 				</tr>
 				</thead>

@@ -175,7 +175,7 @@ if (!(isset($_SESSION['username']) && isset($_SESSION['password']))) {
       break;
 
     case "tambahhama":
-      echo "<form name=text_form method=POST action='$aksi?module=hama&act=input' onsubmit='return Blank_TextField_Validator()' enctype='multipart/form-data'>
+    echo "<form name=text_form method=POST action='$aksi?module=hama&act=input' onsubmit='return Blank_TextField_Validator()' enctype='multipart/form-data'>
           <br><br><table class='table table-bordered'>
 		  <tr><td width=120>Nama hama</td><td><input autocomplete='off' type=text placeholder='Masukkan hama baru...' class='form-control' name='nama_hama' size=30></td></tr>
 		  <tr><td width=120>Detail hama</td><td> <textarea rows='4' cols='50' class='form-control' name='det_hama'type=text placeholder='Masukkan detail hama baru...'></textarea></td></tr>

@@ -5,7 +5,7 @@ if (!(isset($_SESSION['username']) && isset($_SESSION['password']))) {
   header('location:index.php');
   exit();
 } else {
-?>
+  ?>
   <?php
 
   session_start();
@@ -28,9 +28,9 @@ if (!(isset($_SESSION['username']) && isset($_SESSION['password']))) {
     $fileName = $_FILES['gambar']['name'];
     move_uploaded_file($_FILES['gambar']['tmp_name'], "../../gambar/hama/" . $_FILES['gambar']['name']);
     mysql_query("INSERT INTO hama(
-			      nama_hama,det_hama,srn_hama,gambar) 
-	                       VALUES(
-				'$nama_hama','$det_hama','$srn_hama','$fileName')");
+     nama_hama,det_hama,srn_hama,gambar) 
+    VALUES(
+      '$nama_hama','$det_hama','$srn_hama','$fileName')");
 
     header('location:../../index.php?module=' . $module);
   }
@@ -46,19 +46,19 @@ if (!(isset($_SESSION['username']) && isset($_SESSION['password']))) {
       move_uploaded_file($_FILES['gambar']['tmp_name'], "../../gambar/hama/" . $_FILES['gambar']['name']);
 
       mysql_query("UPDATE hama SET
-					nama_hama   = '$nama_hama',
-					det_hama   = '$det_hama',
-					srn_hama   = '$srn_hama',
-                      gambar   = '$fileName'
-               WHERE kode_hama       = '$_POST[id]'");
+       nama_hama   = '$nama_hama',
+       det_hama   = '$det_hama',
+       srn_hama   = '$srn_hama',
+       gambar   = '$fileName'
+       WHERE kode_hama       = '$_POST[id]'");
     } else {
       mysql_query("UPDATE hama SET
-					nama_hama   = '$nama_hama',
-					det_hama   = '$det_hama',
-					srn_hama   = '$srn_hama'
-               WHERE kode_hama       = '$_POST[id]'");
+       nama_hama   = '$nama_hama',
+       det_hama   = '$det_hama',
+       srn_hama   = '$srn_hama'
+       WHERE kode_hama       = '$_POST[id]'");
     }
     header('location:../../index.php?module=' . $module);
   }
   ?>
-<?php } ?>
+  <?php } ?>

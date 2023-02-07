@@ -32,7 +32,7 @@ if (!(isset($_SESSION['username']) && isset($_SESSION['password']))) {
 	}
 
 // Update pengetahuan
-	elseif ($module=='keparahanpenyakit' AND $act=='update'){
+	elseif ($module=='intensitaskerusakan' AND $act=='update'){
 		$jml_sample=$_POST[jml_sample];
 		$nilai_skor=$_POST[nilai_skor];
 		$total_sample=$_POST[total_sample];
