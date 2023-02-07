@@ -15,7 +15,7 @@ if (!(isset($_SESSION['username']) && isset($_SESSION['password']))) {
 
 // Hapus pengetahuan
 	if ($module=='diseaseSaverty' AND $act=='hapus'){
-		mysql_query("DELETE FROM keparahan_penyakit WHERE id_keparahan='$_GET[id_keparahan]'");
+		mysql_query("DELETE FROM keparahan_penyakit WHERE id_keparahan='$_GET[id]'");
 		header('location:../../index.php?module='.$module);
 	}
 
@@ -27,10 +27,6 @@ if (!(isset($_SESSION['username']) && isset($_SESSION['password']))) {
 		$total_sample=$_POST[jml_daun_skor_sama];
 		$rekomendasi=$_POST[rekomendasi];
 
-		// INSERT INTO `keparahan_penyakit` (`id_keparahan`, `luas_daun_terserang`, `skor`, `jml_daun_skor_sama`, `rekomendasi`) VALUES (NULL, '12', '12', '12', 'halah');
-
-
-
 
 		mysql_query("INSERT INTO `keparahan_penyakit`(
 			id_keparahan,luas_daun_terserang,skor,jml_daun_skor_sama,rekomendasi) 
@@ -38,31 +34,24 @@ if (!(isset($_SESSION['username']) && isset($_SESSION['password']))) {
 			NULL,'$jml_sample','$nilai_skor','$total_sample','$rekomendasi')");
 		header('location:../../index.php?module='.$module);
 
-
-		// mysql_query("INSERT INTO keparahan_penyakit(
-		// 	luas_daun_terserang,skor,jml_daun_skor_sama,rekomendasi) 
-		// VALUES(
-		// 	'$jml_sample','$nilai_skor','$total_sample','$rekomendasi')");
-		// header('location:../../index.php?module='.$module);
-		
-		
-
-
 	}
+
+
+
 
 // Update pengetahuan
 	elseif ($module=='diseaseSaverty' AND $act=='update'){
-		$jml_sample=$_POST[luas_daun_terserang];
-		$nilai_skor=$_POST[skor];
-		$total_sample=$_POST[jml_daun_skor_sama];
+		$luas_daun_terserang=$_POST[luas_daun_terserang];
+		$skor=$_POST[skor];
+		$jml_daun_skor_sama=$_POST[jml_daun_skor_sama];
 		$rekomendasi=$_POST[rekomendasi];
 
 		mysql_query("UPDATE keparahan_penyakit SET
-			luas_daun_terserang   = '$jml_sample',
-			skor   = '$nilai_skor',
-			jml_daun_skor_sama   = '$total_sample',
+			luas_daun_terserang   = '$luas_daun_terserang',
+			skor   = '$skor',
+			jml_daun_skor_sama   = '$jml_daun_skor_sama',
 			rekomendasi   = '$rekomendasi',
-			WHERE id_keparahan= '$_POST[id_keparahan]'");
+			WHERE id_keparahan= '$_POST[id]'");
 		
 		header('location:../../index.php?module='.$module);
 	}

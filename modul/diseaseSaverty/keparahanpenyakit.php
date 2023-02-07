@@ -86,7 +86,8 @@ if (!(isset($_SESSION['username']) && isset($_SESSION['password']))) {
 					<td>$r[rekomendasi]</td>
 
 
-					<td align=center><a type='button' class='btn btn-block btn-success' diseaseSaverty/edithama/$r[id_keparahan]><i class='fa fa-pencil-square-o' aria-hidden='true'></i> Ubah </a> &nbsp;
+					<td align=center><a type='button' class='btn btn-block btn-success' href=diseaseSaverty/editkeparahan/$r[id_keparahan]><i class='fa fa-pencil-square-o' aria-hidden='true'></i> Ubah </a> &nbsp;
+
 					<a type='button' class='btn btn-block btn-danger' href=\"JavaScript: confirmIt('Anda yakin akan menghapusnya ?','$aksi?module=diseaseSaverty&act=hapus&id=$r[id_keparahan]','','','','u','n','Self','Self')\" onMouseOver=\"self.status=''; return true\" onMouseOut=\"self.status=''; return true\"> <i class='fa fa-trash-o' aria-hidden='true'></i> Hapus</a>
 					</td></tr>";
 					$no++;
@@ -130,16 +131,21 @@ if (!(isset($_SESSION['username']) && isset($_SESSION['password']))) {
 					else
 						$warna = "light";
 					echo "<tr class='" . $warna . "'>
+
 					<td align=center>$no</td>
 					<td>$r[luas_daun_terserang]</td>
 					<td>$r[skor]</td>
 					<td>$r[jml_daun_skor_sama]</td>
 					<td>$r[rekomendasi]</td>
 					<td align=center>
-					<a type='button' class='btn btn-block btn-success' diseaseSaverty/edithama/$r[id_keparahan]><i class='fa fa-pencil-square-o' aria-hidden='true'></i> Ubah </a> &nbsp;
+
+					<a type='button' class='btn btn-block btn-success' href=diseaseSaverty/editkeparahan/$r[id_keparahan]><i class='fa fa-pencil-square-o' aria-hidden='true'></i> Ubah </a> &nbsp;
+
 					<a type='button' class='btn btn-block btn-danger' href=\"JavaScript: confirmIt('Anda yakin akan menghapusnya ?','$aksi?module=diseaseSaverty&act=hapus&id=$r[id_keparahan]','','','','u','n','Self','Self')\" onMouseOver=\"self.status=''; return true\" onMouseOut=\"self.status=''; return true\">
+
 					<i class='fa fa-trash-o' aria-hidden='true'></i> Hapus</a>
 					</td></tr>";
+
 					$no++;
 					$counter++;
 				}
@@ -221,8 +227,6 @@ if (!(isset($_SESSION['username']) && isset($_SESSION['password']))) {
 
 
 
-
-
       <tr><td></td><td><input class='btn btn-danger' type=submit name=submit value='Simpan' >
 
 
@@ -232,7 +236,7 @@ if (!(isset($_SESSION['username']) && isset($_SESSION['password']))) {
 
 
 
-      case "edithama":
+      case "editkeparahan":
       $edit = mysql_query("SELECT * FROM keparahan_penyakit WHERE id_keparahan='$_GET[id]'");
       $r = mysql_fetch_array($edit);
       // if ($r['gambar']) {
@@ -242,19 +246,17 @@ if (!(isset($_SESSION['username']) && isset($_SESSION['password']))) {
       // }
 
       echo "<form name=text_form method=POST action='$aksi?module=diseaseSaverty&act=update' onsubmit='return Blank_TextField_Validator()' enctype='multipart/form-data'>
-      <input type=hidden name=id value='$r[id_keparahan]'>
+      <input type=hidden name=id_keparahan value='$r[id_keparahan]'>
       <br><br><table class='table table-bordered'>
-      <tr><td width=120>Nama hama</td><td><input autocomplete='off' type=text class='form-control' name='luas_daun_terserang' size=30 value=\"$r[luas_daun_terserang]\"></td></tr>
-      <tr><td width=120>Detail hama</td><td><textarea rows='4' cols='50' type=text class='form-control' name='skor'>$r[skor]</textarea></td></tr>
+      <tr><td width=120>Luas Daun Terserang</td><td><input autocomplete='off' type=text class='form-control' name='luas_daun_terserang' size=30 value=\"$r[luas_daun_terserang]\"></td></tr>
+      <tr><td width=120>SKor</td><td><textarea rows='4' cols='50' type=text class='form-control' name='skor'>$r[skor]</textarea></td></tr>
 
-      <tr><td width=120>Pengendalian</td><td><textarea rows='4' cols='50' type=text class='form-control' name='jml_daun_skor_sama'>$r[jml_daun_skor_sama]</textarea></td></tr>
+      <tr><td width=120>Jumlah Daun Skor Sama</td><td><textarea rows='4' cols='50' type=text class='form-control' name='jml_daun_skor_sama'>$r[jml_daun_skor_sama]</textarea></td></tr>
 
-      <tr><td width=120>Pengendalian</td><td><textarea rows='4' cols='50' type=text class='form-control' name='rekomendasi'>$r[rekomendasi]</textarea></td></tr>
+      <tr><td width=120>Rekomendasi</td><td><textarea rows='4' cols='50' type=text class='form-control' name='rekomendasi'>$r[rekomendasi]</textarea></td></tr>
 
+      <tr><td></td><td><input class='btn btn-success' type=submit name=submit value='Simpasn' >
 
-      <tr><td width=120>Gambar Post</td><td>Upload Gambar (Ukuran Maks = 1 MB) : <input id='upload' type='file' class='form-control' name='gambar' required /></td></tr>
-      <tr><td></td><td><img id='preview' src='$gambar' width=200></td></tr>          
-      <tr><td></td><td><input class='btn btn-success' type=submit name=submit value='Simpan' >
       <input class='btn btn-danger' type=button name=batal value='Batal' onclick=\"window.location.href='?module=diseaseSaverty';\"></td></tr>
       </table></form>";
       break;
