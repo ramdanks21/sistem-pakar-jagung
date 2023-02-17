@@ -1,0 +1,38 @@
+Strlen
+______________
+-fungsi strlen ini adalah untuk menghitung jumlah karakter pada string. Pada implementasi kedalam aplikasi, biasanya digunakan untuk membatasi jumlah karakter pada suatu inputan.
+
+
+explode
+______________
+Explode. fungsi explode adalah fungsi php yang memiliki fungsi sebagai pemisah string. jadi sebuah string akan di pecahkan menurut tanda pisah yang di tentukan sendiri. jadi string yang telah di pecah, akan menjadi array. cara penulisannya : explode().
+
+implode
+______________
+Implode. fungsi implode adalah fungsi php yang memiliki kegunaan untuk menggabungkan kembali string yang telah di pecahkan tadi menggunakan fungsi explode. cara penulisannya : implode().
+
+abs
+______________
+Mengembalikan nilai absolut (positif) dari sebuah angka
+
+max()
+______________
+Mengembalikan nilai tertinggi dalam array atau nilai tertinggi dari beberapa nilai yang ditentukan
+
+
+min()
+______________
+Mengembalikan nilai terendah dalam array atau nilai terendah dari beberapa nilai yang ditentukan
+
+
+Fungsi asort()
+_______________
+mengurutkan elemen array associative dalam urutan naik sesuai dengan nilainya. Ini berfungsi seperti rsort(), tetapi mempertahankan hubungan antara kunci dan nilainya saat menyortir.
+
+Fungsi number_format()
+_______________
+ini digunakan untuk membuat format penulisan bilangan angka seperti ribuan, ratusan, jutaan dan seterusnya.
+
+Serialize
+______________
+Serialize berfungsi untuk mengambil objek dan mengubahnya menjadi representasi string yang berisi nama kelas dan propertinya.

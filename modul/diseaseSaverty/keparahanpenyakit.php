@@ -64,7 +64,6 @@ if (!(isset($_SESSION['username']) && isset($_SESSION['password']))) {
 				<th>Luas Daun Terserang</th>
 				<th>Skor</th>
 				<th>Jumlah Daun Skor Sama</th>
-				<th>Rekomendasi</th>
 				<th>Aksi</th>
 				</tr>
 				</thead>
@@ -83,7 +82,7 @@ if (!(isset($_SESSION['username']) && isset($_SESSION['password']))) {
 					<td>$r[luas_daun_terserang]</td>
 					<td>$r[skor]</td>
 					<td>$r[jml_daun_skor_sama]</td>
-					<td>$r[rekomendasi]</td>
+					// <td>$r[rekomendasi]</td>
 
 
 					<td align=center><a type='button' class='btn btn-block btn-success' href=diseaseSaverty/editkeparahan/$r[id_keparahan]><i class='fa fa-pencil-square-o' aria-hidden='true'></i> Ubah </a> &nbsp;
@@ -112,7 +111,6 @@ if (!(isset($_SESSION['username']) && isset($_SESSION['password']))) {
 				<th>L.DaunTerserang</th>
 				<th>Skor</th>
 				<th>Jumlah Daun Dengan Skor Sama</th>
-				<th>Rekomendasi</th>
 				<th>Aksi</th>
 
 
@@ -136,7 +134,6 @@ if (!(isset($_SESSION['username']) && isset($_SESSION['password']))) {
 					<td>$r[luas_daun_terserang]</td>
 					<td>$r[skor]</td>
 					<td>$r[jml_daun_skor_sama]</td>
-					<td>$r[rekomendasi]</td>
 					<td align=center>
 
 					<a type='button' class='btn btn-block btn-success' href=diseaseSaverty/editkeparahan/$r[id_keparahan]><i class='fa fa-pencil-square-o' aria-hidden='true'></i> Ubah </a> &nbsp;
@@ -253,7 +250,7 @@ if (!(isset($_SESSION['username']) && isset($_SESSION['password']))) {
 
       <tr><td width=120>Jumlah Daun Skor Sama</td><td><textarea rows='4' cols='50' type=text class='form-control' name='jml_daun_skor_sama'>$r[jml_daun_skor_sama]</textarea></td></tr>
 
-      <tr><td width=120>Rekomendasi</td><td><textarea rows='4' cols='50' type=text class='form-control' name='rekomendasi'>$r[rekomendasi]</textarea></td></tr>
+      // <tr><td width=120>Rekomendasi</td><td><textarea rows='4' cols='50' type=text class='form-control' name='rekomendasi'>$r[rekomendasi]</textarea></td></tr>
 
       <tr><td></td><td><input class='btn btn-success' type=submit name=submit value='Simpan' >
 

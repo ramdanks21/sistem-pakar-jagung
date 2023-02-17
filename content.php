@@ -7,22 +7,28 @@ if ($module == ""){
 elseif ($module == "bantuan"){
 	include "modul/bantuan.php";
 }
-elseif ($module == "intensitaskerusakan"){
-	include "modul/intensitaskerusakan.php";
 
-}elseif ($module == "diseaseSaverty"){
+elseif ($module == "diseaseSaverty"){
 	include "modul/diseaseSaverty/keparahanpenyakit.php";
 
-}elseif ($module == "diseaseIncidence"){
+}
+
+elseif ($module == "intensitasKerusakan"){
+	include "modul/intensitasKerusakan/intensitaskerusakan.php";
+}
+
+elseif ($module == "diseaseIncidence"){
 	include "modul/diseaseIncidence/presentasetanaman.php";
 
-}elseif ($module == "intensitaskerusakan"){
-	include "modul/keparahanpenyakit.php";
 }
 elseif ($module == "diagnosa"){
 	include "modul/diagnosa/diagnosa.php";
 }elseif ($module == "diagnosahama"){
 	include "modul/diagnosa/diagnosahama.php";
+}
+
+elseif ($module == "rekomendasi"){
+	include "modul/rekomendasi/rekomendasi.php";
 }
 
 elseif ($module == "penyakit"){
@@ -51,7 +57,6 @@ elseif ($module == "pengetahuan"){
 elseif ($module == "pengetahuanHama"){
 	include "modul/pengetahuan/pengetahuanHama.php";
 }
-
 
 elseif ($module == "password"){
 	include "modul/password/password.php";

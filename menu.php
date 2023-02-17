@@ -41,12 +41,22 @@ $module = $_GET['module'];
                 </span>
               </a>
             </li>
-
+<!-- 
             <li>
               <a <?php if ($module == "diseaseIncidence") echo 'class="active"'; ?> href="diseaseIncidence">
                 <i class="fa fa-flask"></i> 
                 <span>
                   <i> Disease incidence</i>
+
+                </span>
+              </a>
+            </li>  -->
+
+            <li>
+              <a <?php if ($module == "rekomendasi") echo 'class="active"'; ?> href="rekomendasi">
+                <i class="fa fa-flask"></i> 
+                <span>
+                  <i> Rekomendasi</i>
 
                 </span>
               </a>
@@ -94,6 +104,7 @@ $module = $_GET['module'];
                       <span>Diagnosa</span>
                     </li>
                   </a>
+
                   <li>
 
                     <a <?php if ($module == "diagnosahama") echo 'class="active"'; ?> href="diagnosahama">
@@ -101,8 +112,18 @@ $module = $_GET['module'];
                       <i class="fa fa-search-plus"></i> 
 
                       <span>Diagnosa Hama</span>
-                    </li>
-                  </a>
+                    </a>
+                  </li>  
+
+                  <li>
+
+                    <a <?php if ($module == "intensitasKerusakan") echo 'class="active"'; ?> href="intensitasKerusakan">
+
+                      <i class="fa fa-search-plus"></i> 
+
+                      <span>Intensitas Keruksakan</span>
+                    </a>
+                  </li>
 
 
                   <div class="container">
@@ -127,18 +148,13 @@ $module = $_GET['module'];
                     </li>
 
 
-                    <li>
-                      <a <?php if ($module == "intensitas") echo 'class="active"'; ?> href="diagnosahama"><i class="fa fa-bookmark-o"></i> <span>Intensitas Kerusakan</span>
 
-                      </a>
-
-                      <li>
-                        <div class="container"></div>
+                    <div class="container"></div>
 
 
-                        <?php
-                      }
+                    <?php
+                  }
 
-                      ?>
-                      <li><a <?php if ($module == "tentang") echo 'class="active"'; ?> href="tentang"><i class="fa fa-info-circle"></i> <span>Tentang</span></a><li>
-                        <div class="container"></div>
+                  ?>
+                  <li><a <?php if ($module == "tentang") echo 'class="active"'; ?> href="tentang"><i class="fa fa-info-circle"></i> <span>Tentang</span></a><li>
+                    <div class="container"></div>
